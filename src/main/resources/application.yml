@@ -1,0 +1,10 @@
+micronaut:
+  application:
+    name: DLM_SCANNER
+  server:
+    cors:
+      enabled: true
+netty:
+  default:
+    allocator:
+      max-order: 3
