@@ -7,13 +7,13 @@ import com.nutrix.sdk.exception.RowLimitException;
 import com.nutrix.sdk.model.ScannerResponse;
 import com.nutrix.sdk.references.IntegerReference;
 import jakarta.inject.Singleton;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Singleton
 public class ScannerService {
 
-    private static final Logger logger = LogManager.getLogger(ScannerController.class);
+    private static final Logger logger = LoggerFactory.getLogger(ScannerController.class);
 
     public int configureScanner() {
         var ssmini = SampleSdk.INSTANCE;

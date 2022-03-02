@@ -14,3 +14,5 @@ out/
 .factorypath
 DLM_SCANNER-1.0.msi
 jdk-14+fx
+*.msi
+*.log

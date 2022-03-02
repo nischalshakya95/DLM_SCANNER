@@ -6,8 +6,8 @@ import com.nutrix.sdk.model.BarcodeResponse;
 import com.nutrix.sdk.model.ScannerResponse;
 import com.nutrix.sdk.references.IntegerReference;
 import com.nutrix.utils.StringUtils;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ import java.util.List;
 
 public class InitializeSdk {
 
-    private static final Logger logger = LogManager.getLogger(InitializeSdk.class);
+    private static final Logger logger = LoggerFactory.getLogger(InitializeSdk.class);
 
     public static ScannerResponse loadAndInitializeSdk() throws RowLimitException {
         List<BarcodeResponse> barcodeResponses = new ArrayList<>();
